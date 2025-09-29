@@ -16,12 +16,17 @@ const Navbar = () => {
   return (
     <nav className="bg-primary sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* This div uses flex and justify-between to keep the brand and menu icon at opposite ends */}
         <div className="flex items-center justify-between h-20">
+          
+          {/* This is the brand name. It has no 'hidden' classes, so it is ALWAYS visible. */}
           <div className="flex-shrink-0">
-            <NavLink to="/" className="text-white text-2xl font-bold">
+            <NavLink to="/" className="text-gray-900 text-2xl font-bold">
               Hey<span className="text-accent">Digitals</span>
             </NavLink>
           </div>
+
+          {/* These are the full-size navigation links. They are hidden on mobile ('hidden') and shown on medium screens and up ('md:block'). */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navLinks.map((link) => (
@@ -41,6 +46,8 @@ const Navbar = () => {
               ))}
             </div>
           </div>
+
+          {/* This is the hamburger menu icon. It is ONLY shown on mobile ('md:hidden'). */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -53,6 +60,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* This is the collapsible menu that appears when you click the hamburger icon. */}
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

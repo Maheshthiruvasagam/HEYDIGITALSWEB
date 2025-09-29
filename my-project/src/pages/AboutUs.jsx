@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaUsers, FaLightbulb, FaRocket } from 'react-icons/fa';
 import TestimonialCard from '../components/Card';
+import photo1 from '../assets/saravana.jpeg';
+import photo2 from '../assets/mahesh.jpeg';
 
 const AboutUs = () => {
     // Dummy data for testimonials
@@ -40,24 +42,36 @@ const AboutUs = () => {
         <section className="mb-20">
           <h2 className="text-4xl font-bold text-center mb-12">Meet the Minds Behind the Magic</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            {/* Saravana Perumal */}
-            <div className="bg-primary p-8 rounded-lg text-center">
-              <img src="https://i.pravatar.cc/150?u=saravana" alt="Saravana Perumal" className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-accent"/>
+            
+            {/* Saravana Perumal - Wrapped in an <a> tag */}
+            <a 
+              href="https://saravanaofficialpmv.github.io/mainportfolio1/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block bg-primary p-8 rounded-lg text-center transition-transform duration-300 transform hover:scale-105"
+            >
+              <img src={photo1} alt="Saravana Perumal" className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-accent"/>
               <h3 className="text-2xl font-bold text-white">Saravana Perumal</h3>
               <p className="text-accent font-semibold mb-3">Founder</p>
               <p className="text-dark-text">
-                With a deep passion for technology and a creative flair, Saravana leads our development team. He specializes in building robust, scalable web solutions that are both functional and beautiful. His vision is the driving force behind our technical excellence.
+               Saravana is the strategic mind behind our agency's growth. With a keen eye for market trends and a client-first approach, he ensures every project aligns with business goals and delivers measurable results. He bridges the gap between creative ideas and business success.
               </p>
-            </div>
-            {/* Mahesh */}
-            <div className="bg-primary p-8 rounded-lg text-center">
-              <img src="https://i.pravatar.cc/150?u=mahesh" alt="Mahesh" className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-accent"/>
+            </a>
+
+            {/* Mahesh - Wrapped in an <a> tag */}
+            <a 
+              href="https://mahesh-web-craft.lovable.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block bg-primary p-8 rounded-lg text-center transition-transform duration-300 transform hover:scale-105"
+            >
+              <img src={photo2} alt="Mahesh" className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-accent"/>
               <h3 className="text-2xl font-bold text-white">Mahesh</h3>
               <p className="text-accent font-semibold mb-3">Co-Founder & CEO</p>
               <p className="text-dark-text">
-                Mahesh is the strategic mind behind our agency's growth. With a keen eye for market trends and a client-first approach, he ensures every project aligns with business goals and delivers measurable results. He bridges the gap between creative ideas and business success.
+                  With a deep passion for technology and a creative flair, Mahesh leads our development team. He specializes in building robust, scalable web solutions that are both functional and beautiful. His vision is the driving force behind our technical excellence.
               </p>
-            </div>
+            </a>
           </div>
         </section>
 

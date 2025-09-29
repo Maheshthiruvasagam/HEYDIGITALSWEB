@@ -1,44 +1,53 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import project2 from '../assets/project2.jpeg';
+import project4 from '../assets/project4.jpeg';
+import project5 from '../assets/project5.jpeg';
+import project6 from '../assets/project6.jpeg';
+import project7 from '../assets/project7.jpeg';
 
 const projects = [
   {
     title: 'Luxe Fashion Shopify Store',
     category: 'Shopify Development',
-    description: 'A high-end fashion brand needed a sleek, minimalist Shopify store. We developed a custom theme with advanced filtering, quick-view functionality, and a seamless checkout process, resulting in a 35% increase in conversions.',
-    imageUrl: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    description:
+      'A high-end fashion brand needed a sleek, minimalist Shopify store. We developed a custom theme with advanced filtering, quick-view functionality, and a seamless checkout process, resulting in a 35% increase in conversions.',
+    imageUrl: project2,
     liveLink: '#',
   },
   {
     title: 'TechSphere Corporate Website',
     category: 'Web Development',
-    description: 'A complete website overhaul for a B2B tech company. We built a fast, modern site using React and Tailwind CSS, featuring interactive animations, a content management system, and lead generation forms.',
-    imageUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    description:
+      'A complete website overhaul for a B2B tech company. We built a fast, modern site using React and Tailwind CSS, featuring interactive animations, a content management system, and lead generation forms.',
+    imageUrl: project4,
     liveLink: '#',
   },
   {
     title: 'Artisan Coffee Roasters',
     category: 'Shopify Development',
-    description: 'An e-commerce platform for a specialty coffee brand. The project included a subscription model integration, product customization options, and a blog for coffee enthusiasts. The site now enjoys a 50% repeat customer rate.',
-    imageUrl: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+    description:
+      'An e-commerce platform for a specialty coffee brand. The project included a subscription model integration, product customization options, and a blog for coffee enthusiasts. The site now enjoys a 50% repeat customer rate.',
+    imageUrl: project5,
     liveLink: '#',
   },
   {
     title: 'RealtyConnect Real Estate Platform',
     category: 'Web Development',
-    description: 'A web application for a real estate agency, featuring advanced property search, map integration, and agent profiles. Built with a robust backend to handle thousands of listings.',
-    imageUrl: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    description:
+      'A web application for a real estate agency, featuring advanced property search, map integration, and agent profiles. Built with a robust backend to handle thousands of listings.',
+    imageUrl: project6,
     liveLink: '#',
   },
-   {
+  {
     title: 'FitLife Fitness App Landing Page',
     category: 'Web Development',
-    description: 'A vibrant and energetic landing page for a new fitness mobile app. The page was designed to maximize app downloads, featuring engaging animations, user testimonials, and clear calls-to-action.',
-    imageUrl: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    description:
+      'A vibrant and energetic landing page for a new fitness mobile app. The page was designed to maximize app downloads, featuring engaging animations, user testimonials, and clear calls-to-action.',
+    imageUrl: project7,
     liveLink: '#',
   },
 ];
-
 
 const OurWorks = () => {
   return (

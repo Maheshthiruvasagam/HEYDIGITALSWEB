@@ -15,7 +15,8 @@ const Home = () => {
             At HeyDigitals, we craft stunning websites and powerful marketing strategies that drive growth, engage audiences, and elevate your brand to new heights.
           </p>
           <div className="space-x-4">
-            <Link to="/works" className="bg-accent text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 transition-transform transform hover:scale-105 duration-300">
+            {/* This Link component has no 'hidden' classes, so it is ALWAYS visible. */}
+            <Link to="/works" className="bg-gray-800 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 transition-transform transform hover:scale-105 duration-300">
               View Our Work
             </Link>
             <Link to="/contact" className="bg-secondary text-light-text font-bold py-3 px-8 rounded-full hover:bg-gray-700 transition-transform transform hover:scale-105 duration-300">
@@ -63,7 +64,7 @@ const Home = () => {
               <p className="text-dark-text max-w-2xl mx-auto mb-8">
                   Let's collaborate to create something extraordinary. We're here to turn your vision into a digital reality.
               </p>
-              <Link to="/contact" className="bg-accent text-white font-bold py-4 px-10 rounded-full hover:bg-purple-700 transition-transform transform hover:scale-105 duration-300 text-lg">
+              <Link to="/contact" className="bg-gray-800 text-white font-bold py-4 px-10 rounded-full hover:bg-purple-700 transition-transform transform hover:scale-105 duration-300 text-lg">
                   Let's Talk
               </Link>
           </div>
